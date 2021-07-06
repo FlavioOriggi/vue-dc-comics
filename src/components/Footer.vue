@@ -33,8 +33,7 @@
             </div>
           </div> 
 
-          <div class="logo-sfondo">
-            <img src="../assets/dc-logo-bg.png" alt="">
+          <div class="logo-sfondo">            
           </div>        
       </div> 
     </div> 
@@ -59,7 +58,133 @@
 
 <script>
 export default {
-  item: "Footer"
+  item: "Footer",
+    data() {
+      return {
+          listFooter: [
+              {
+                  title: "DC Comics",
+                  elements: [
+                      {
+                          text: "Characters",
+                          link: "#"
+                      },
+                      {
+                          text: "Comics",
+                          link: "#"
+                      },
+                      {
+                          text: "Movies",
+                          link: "#"
+                      },
+                      {
+                          text: "TV",
+                          link: "#"
+                      },
+                      {
+                          text: "Games",
+                          link: "#"
+                      },
+                      {
+                          text: "Videos",
+                          link: "#"
+                      },
+                      {
+                          text: "News",
+                          link: "#"
+                      }
+                  ],
+              },
+              {
+                  title: "Shop",
+                  elements: [
+                      {
+                          text: "Shop DC",
+                          link: "#"
+                      },
+                      {
+                          text: "Shop DC Collectibles",
+                          link: "#"
+                      }
+                  ]
+              },
+              {
+                  title: "DC",
+                  elements: [
+                      {
+                          text: "Terms Of Use",
+                          link: "#"
+                      },
+                      {
+                          text: "Privacy Policy (New)",
+                          link: "#"
+                      },
+                      {
+                          text: "Ad Choices",
+                          link: "#"
+                      },
+                      {
+                          text: "Advertising",
+                          link: "#"
+                      },
+                      {
+                          text: "Jobs",
+                          link: "#"
+                      },
+                      {
+                          text: "Subscriptions",
+                          link: "#"
+                      },
+                      {
+                          text: "Talent Workshops",
+                          link: "#"
+                      },
+                      {
+                          text: "CPSC Certificates",
+                          link: "#"
+                      },
+                      {
+                          text: "Ratings",
+                          link: "#"
+                      },
+                      {
+                          text: "Shop Help",
+                          link: "#"
+                      },
+                      {
+                          text: "Contact Us",
+                          link: "#"
+                      }
+                  ]
+              },
+              {
+                  title: "Sites",
+                  elements: [
+                      {
+                          text: "DC",
+                          link: "#"
+                      },
+                      {
+                          text: "MAD Magazine",
+                          link: "#"
+                      },
+                      {
+                          text: "DC Kids",
+                          link: "#"
+                      },
+                      {
+                          text: "DC Universe",
+                          link: "#"
+                      },
+                      {
+                          text: "DC Power Visa",
+                          link: "#"
+                      }
+                  ]
+              }
+          ]
+      }
+  }
   
 };
 </script>
@@ -70,16 +195,19 @@ export default {
 
 .footer-high{    
   background-image:url("../assets/footer-bg.jpg");
-  height: 400px;
-  padding: 50px 0;  
+  background-size: cover;
+
+     
 
   .container-up{
     width: 75%; 
     margin: 0 auto;
+    display: flex;
 
     .footer-list{
       width: 33%;
       display: flex;
+      padding: 50px 0; 
 
       .comics-e-shop, .dc,
       .sites{
@@ -114,47 +242,61 @@ export default {
             }
           }
         }    
-      }
+      }      
     }
+
+    .logo-sfondo{     
       
+      background-image: url('../assets/dc-logo-bg.png');
+      width: 50%; 
+      
+      background-size: cover;
+      background-position: center;
+    }        
   } 
 }
 
 .footer-low{
-  background-color: #303030;
-  height: 130px;
+  background-color: #303030;  
+  padding: 50px 0;
 
   .container-low{
-        width: 75%;
+    width: 75%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    margin: 0 auto;        
+
+      button{
+        padding: 10px 15px; 
+        border: 2px solid #0282f9;
+        text-transform: uppercase;
+        color: white;
+        font-size: 18px;
+        background-color: #303030;
+
+        a{
+          color: white;
+          text-decoration: none;
+        }          
+      }
+
+
+      .follow-icons{
         display: flex;
-        justify-content: space-between;               
-        margin: 0 auto;
-        padding: 50px 0;
 
-
-        .follow-icons{
-          display: flex;
-
-          h5{
-            color: #0282f9;
-            text-transform: uppercase;
-            font-size: 20px;
-            margin-right: 10px;
-            padding-top: 5px;
-          }
-
-          img{
-            margin: 0 10px
-          }
+        h5{
+          color: #0282f9;
+          text-transform: uppercase;
+          font-size: 20px;
+          margin-right: 10px;
+          padding-top: 7px;           
         }
 
-        .logo-sfondo{
-          img{
-            width: 50%;
-          }
+        img{
+          margin: 0 10px
         }
-
-
+      }
   }
 }
 </style>

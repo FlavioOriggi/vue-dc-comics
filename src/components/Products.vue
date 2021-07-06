@@ -28,6 +28,12 @@
 <script>
 export default {
   item: "Products",
+  data() {
+      return {          
+          listProducts: [                
+          ]
+      }
+  }
 }
 </script>
 

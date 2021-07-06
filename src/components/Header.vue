@@ -112,17 +112,17 @@ header{
                     padding:50px 0;
                     margin: 0 10px;
 
+
                     a{
                         color: #5b5f55;
                         font-size: 20px;
                         font-weight: bold;
                         text-decoration: none;                
 
-                        // &:hover,
-                        // &.active{
-                        //     background-color: blueviolet;
-                        // }
-                    }
+                            &:hover {
+                                border-bottom: 3px solid #0282f9;
+                            }
+                    }        
                 }
             }
         }           
