@@ -21,13 +21,8 @@
         <img class="img-visa-products" src="../assets/buy-dc-power-visa.svg" alt="">
         <p class="text-icon-products">dc power visa</p>
       </div>
-      
-
-      
-      
-       
     </div>       
-  </section>
+  </section>   
 </template>
 
 <script>
@@ -40,14 +35,12 @@ export default {
 <style lang="scss">
 
 .products{
-  display: flex;
-  
+  display: flex;  
   background-color: #0282f9;
   height: 180px;
   padding: 60px 0;
 
   .container{
-
     width: 75%;
     display: flex;
     justify-content: space-around;     
@@ -77,12 +70,8 @@ export default {
       .img-visa-products{   
         width: 70px;
         margin-right: 5px;
-
       }
-
-    }
-
-      
+    }      
   }
 }
 </style>

@@ -88,7 +88,7 @@ export default {
 header{ 
     
     .header-up{
-        height: 140px;
+        height: 130px;
         background-color: blueviolet;
 
         .container{
@@ -98,8 +98,7 @@ header{
         margin: 0 auto;
 
             .logo-container{
-                padding:30px 0;
-
+                padding:20px 0;
                 img{
                     width: 80%;
                 }
@@ -110,7 +109,7 @@ header{
 
                 li{
                     display: inline-block;
-                    padding:60px 0;
+                    padding:50px 0;
                     margin: 0 10px;
 
                     a{
@@ -132,8 +131,8 @@ header{
     .header-low{        
         background-color: #f09999;
         // background-color: #1c1c1c;
-        height: 140px;
-        padding:55px 0;
+        height: 130px;
+        padding:50px 0;
 
         .container{
             width: 75%;
