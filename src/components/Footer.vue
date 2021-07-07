@@ -7,14 +7,14 @@
               <div class="comics">
                 <h5>dc comics</h5>
                 <ul>
-                  <li><a href=""></a></li>                  
+                  <li v-for="(item,i) in dcComics" :key="i"><a :href="item.link"> {{item.text}} </a></li>                 
                 </ul>              
               </div>
 
               <div class="shop">
                 <h5>shop</h5>
                 <ul>
-                  <li><a href=""></a></li>                  
+                  <li v-for="(item,i) in shop" :key="i"><a :href="item.link"> {{item.text}} </a></li>                  
                 </ul>              
               </div>                    
             </div>
@@ -22,13 +22,13 @@
             <div class="dc"> 
               <h5>dc</h5>
                 <ul>
-                  <li><a href=""></a></li>                 
+                  <li v-for="(item,i) in dc" :key="i"><a :href="item.link"> {{item.text}} </a></li>                 
                 </ul>      
             </div>
             <div class="sites">  
               <h5>sites</h5>
                 <ul>
-                  <li><a href=""></a></li>                    
+                  <li v-for="(item,i) in sites" :key="i"><a :href="item.link"> {{item.text}} </a></li>                    
                 </ul>    
             </div>
           </div> 
@@ -57,136 +57,126 @@
 </template>
 
 <script>
-export default {
-  item: "Footer",
-    data() {
-      return {
-          listFooter: [
-              {
-                  title: "DC Comics",
-                  elements: [
-                      {
-                          text: "Characters",
-                          link: "#"
-                      },
-                      {
-                          text: "Comics",
-                          link: "#"
-                      },
-                      {
-                          text: "Movies",
-                          link: "#"
-                      },
-                      {
-                          text: "TV",
-                          link: "#"
-                      },
-                      {
-                          text: "Games",
-                          link: "#"
-                      },
-                      {
-                          text: "Videos",
-                          link: "#"
-                      },
-                      {
-                          text: "News",
-                          link: "#"
-                      }
-                  ],
-              },
-              {
-                  title: "Shop",
-                  elements: [
-                      {
-                          text: "Shop DC",
-                          link: "#"
-                      },
-                      {
-                          text: "Shop DC Collectibles",
-                          link: "#"
-                      }
-                  ]
-              },
-              {
-                  title: "DC",
-                  elements: [
-                      {
-                          text: "Terms Of Use",
-                          link: "#"
-                      },
-                      {
-                          text: "Privacy Policy (New)",
-                          link: "#"
-                      },
-                      {
-                          text: "Ad Choices",
-                          link: "#"
-                      },
-                      {
-                          text: "Advertising",
-                          link: "#"
-                      },
-                      {
-                          text: "Jobs",
-                          link: "#"
-                      },
-                      {
-                          text: "Subscriptions",
-                          link: "#"
-                      },
-                      {
-                          text: "Talent Workshops",
-                          link: "#"
-                      },
-                      {
-                          text: "CPSC Certificates",
-                          link: "#"
-                      },
-                      {
-                          text: "Ratings",
-                          link: "#"
-                      },
-                      {
-                          text: "Shop Help",
-                          link: "#"
-                      },
-                      {
-                          text: "Contact Us",
-                          link: "#"
-                      }
-                  ]
-              },
-              {
-                  title: "Sites",
-                  elements: [
-                      {
-                          text: "DC",
-                          link: "#"
-                      },
-                      {
-                          text: "MAD Magazine",
-                          link: "#"
-                      },
-                      {
-                          text: "DC Kids",
-                          link: "#"
-                      },
-                      {
-                          text: "DC Universe",
-                          link: "#"
-                      },
-                      {
-                          text: "DC Power Visa",
-                          link: "#"
-                      }
-                  ]
-              }
-          ]
-      }
+ export default {
+  name: 'Footer',
+  data(){
+    return{
+      dcComics : [
+        {
+          text : 'Characters',
+          link : '#'
+        },
+        {
+          text : 'Comics',
+          link : '#'
+        },
+        {
+          text : 'Movies',
+          link : '#'
+        },
+        {
+          text : 'TV',
+          link : '#'
+        },
+        {
+          text : 'Games',
+          link : '#'
+        },
+        {
+          text : 'Videos',
+          link : '#'
+        },
+        {
+          text : 'News',
+          link : '#'
+        }
+      ],
+      shop : [
+        {
+          text : 'Shop DC',
+          link : '#'
+        },
+        {
+          text : 'Shop DC Collectibles',
+          link : '#'
+        }
+      ],
+      dc : [
+        {
+          text : 'Terms Of Use',
+          link : '#'
+        },
+        {
+          text : 'Privacy policy (New)',
+          link : '#'
+        },
+        {
+          text : 'Ad Choices',
+          link : '#'
+        },
+        {
+          text : 'Advertising',
+          link : '#'
+        },
+        {
+          text : 'Jobs',
+          link : '#'
+        },
+        {
+          text : 'Subscriptions',
+          link : '#'
+        },
+        {
+          text : 'Talent Workshops',
+          link : '#'
+        },
+        {
+          text : 'CPSC Certificates',
+          link : '#'
+        },
+        {
+          text : 'Rating',
+          link : '#'
+        },
+        {
+          text : 'Shop Help',
+          link : '#'
+        },
+        {
+          text : 'Contact Us',
+          link : '#'
+        }
+      ],
+      sites : [
+        {
+          text : 'DC',
+          link : '#'
+        },
+        {
+          text : 'MAD Magazine',
+          link : '#'
+        },
+        {
+          text : 'DC Kids',
+          link : '#'
+        },
+        {
+          text : 'DC Universe',
+          link : '#'
+        },
+        {
+          text : 'DC Power Visa',
+          link : '#'
+        }
+      ]     
+    }
+  },
+  methods : {
+    getImgUrl(pic) {
+      return require('../assets/footer-' + pic + '.png')
+    }
   }
-  
-};
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -195,9 +185,7 @@ export default {
 
 .footer-high{    
   background-image:url("../assets/footer-bg.jpg");
-  background-size: cover;
-
-     
+  background-size: cover;    
 
   .container-up{
     width: 75%; 

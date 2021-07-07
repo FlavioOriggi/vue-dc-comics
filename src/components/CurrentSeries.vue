@@ -4,9 +4,8 @@
             <div class="btn-series">
                 <button><a href="">current series</a></button>
             </div>
-            <div class="icon">            
-                <!-- <img :src="iconData.thumb" :alt="iconData.series">
-                <div> {{iconData.series}} </div> -->
+            <div class="icon">           
+                
             </div> 
             <div class="load-more">
                 <button><a href="">load more</a></button>
@@ -18,7 +17,7 @@
 <script>
 export default {
   name: "CurrentSeries", 
-//   props: {iconData: Object}  
+//   props: ["currentseriesitem"] 
        
 }
 </script>
