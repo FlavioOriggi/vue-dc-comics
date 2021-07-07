@@ -40,7 +40,9 @@ export default {
                 color: white;
                 font-size: 18px;
                 background-color: #0282f9;
-                border: none;                        
+                border: none;  
+                position: relative;
+                bottom: 20px;                       
 
                 a{
                 color: white;
