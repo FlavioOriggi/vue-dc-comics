@@ -81,8 +81,7 @@ export default {
 header{ 
     
     .header-up{
-        height: 130px;
-        background-color: blueviolet;
+        height: 130px;        
 
         .container{
         width: 75%;
