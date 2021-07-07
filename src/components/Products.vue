@@ -55,6 +55,7 @@ export default {
     .icon-contenent{
       display: flex;
       width: 20%;
+      
 
       .img-products{
         width: 20%;
@@ -76,6 +77,8 @@ export default {
       .img-visa-products{   
         width: 70px;
         margin-right: 5px;
+        margin-left: 10%;
+
       }
     }      
   }

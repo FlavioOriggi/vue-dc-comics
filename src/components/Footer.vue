@@ -52,8 +52,7 @@
             <img src="../assets/footer-periscope.png" alt="">                    
           </div>        
       </div> 
-    </div>  
-            
+    </div>            
   </footer>   
 </template>
 
@@ -246,12 +245,7 @@
       width: 50%;      
       background-size: cover;
       background-position: center;   
-      
-
-       
-    }
-
-           
+    }       
   } 
 }
 

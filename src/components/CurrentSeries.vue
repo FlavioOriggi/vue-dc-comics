@@ -4,7 +4,9 @@
             <div class="btn-series">
                 <button><a href="">current series</a></button>
             </div>
-            <div class="icon">           
+            <div class="icon">  
+                <!-- <img :src="currentseriesitem.thumb" :alt="currentseriesitem.series">
+                <h5 class="">{{currentseriesitem.series}}</h5>        -->
                 
             </div> 
             <div class="load-more">
@@ -17,7 +19,7 @@
 <script>
 export default {
   name: "CurrentSeries", 
-//   props: ["currentseriesitem"] 
+//   props: ["currentseriesitem"]
        
 }
 </script>
@@ -42,7 +44,7 @@ export default {
                 background-color: #0282f9;
                 border: none;  
                 position: relative;
-                bottom: 20px;                       
+                bottom: 20px;                     
 
                 a{
                 color: white;
@@ -54,6 +56,7 @@ export default {
         .icon{
             width: calc((100% - (10px * 6))/6);
             margin: 40px 0;
+
             img{
                 margin-bottom: 10px;
             }
@@ -73,7 +76,6 @@ export default {
                 border: none;
                 margin-bottom: 15px;
             }
-
             a{
                 color: white;
                 text-decoration: none;            

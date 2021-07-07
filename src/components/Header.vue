@@ -78,8 +78,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-header{ 
-    
+header{     
     .header-up{
         height: 130px;        
 
@@ -118,32 +117,6 @@ header{
                 }
             }
         }           
-    }
-    
-    .header-low{        
-        background-color: #f09999;
-        // background-color: #1c1c1c;
-        height: 130px;
-        padding:50px 0;
-
-        .container{
-            width: 75%;
-            display: flex;
-            justify-content: space-between;        
-            margin: 0 auto;
-
-            a{
-                color: white;
-                font-size: 30px;
-                font-weight: bold;
-                text-decoration: none;                
-
-                // &:hover,
-                // &.active{
-                //     background-color: blueviolet;
-                // }
-            }
-        }
-    } 
+    }   
 }
 </style>
