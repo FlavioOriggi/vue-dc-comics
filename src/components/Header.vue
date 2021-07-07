@@ -14,14 +14,7 @@
                     </nav>
                 </div>
             </div>
-        </div>
-        <div class="header-low">
-            <div class="container">
-                <div class="content-goes-here">
-                    <a href="#">Content goes here!</a>                   
-                </div>        
-            </div>
-        </div>
+        </div>        
     </header>  
 </template>
 

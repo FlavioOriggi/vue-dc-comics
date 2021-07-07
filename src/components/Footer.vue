@@ -245,8 +245,7 @@ export default {
       }      
     }
 
-    .logo-sfondo{     
-      
+    .logo-sfondo{  
       background-image: url('../assets/dc-logo-bg.png');
       width: 50%; 
       

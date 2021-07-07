@@ -3,6 +3,8 @@
     <Header/> 
 
     <main>
+      <Jumbotron/>
+
       <Products/>
     </main>  
     
@@ -12,6 +14,9 @@
 
 <script>
 import Header from "./components/Header.vue";
+import Jumbotron from "./components/Jumbotron.vue";
+import CurrentSeries from "./components/CurrentSeries.vue";
+
 import Products from "./components/Products.vue";
 import Footer from "./components/Footer.vue";
 
@@ -19,7 +24,9 @@ import Footer from "./components/Footer.vue";
 export default {
   name: 'App',
   components: {
-    Header,    
+    Header,
+    Jumbotron,
+    CurrentSeries,    
     Products, 
     Footer
   }
