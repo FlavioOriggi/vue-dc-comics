@@ -33,7 +33,8 @@
             </div>
           </div> 
 
-          <div class="logo-sfondo">            
+          <div class="logo-sfondo">
+                        
           </div>        
       </div> 
     </div> 
@@ -199,13 +200,13 @@
 
       .comics-e-shop, .dc,
       .sites{
-        width: 33%;
+        max-width: 33%;
         padding: 5px;
 
         h5{
           text-transform: uppercase;
           color: white;  
-          font-size: 20px;
+          font-size: 1.25rem;
         }
 
         ul{
@@ -213,33 +214,44 @@
           list-style: none;
 
           li{
-            display: inline-block;
-            padding:60px 0;
-            margin: 0 10px;
+            display: inline-block;            
+            margin: 5px 0;
+            margin-right: 35px;
 
             a{
               color: #5b5f55;
-              font-size: 20px;
-              font-weight: bold;
+              font-size: 0.75rem;              
               text-decoration: none;                
 
-              // &:hover,
-              // &.active{
-              //     background-color: blueviolet;
-              // }
+              &:hover,
+              &.active{
+                  text-decoration: underline;
+                  text-decoration-color: #0282f9;
+              }
             }
           }
-        }    
+        } 
+
+        .comics ul{
+          width: 48%;
+          margin-bottom: 40px;
+        } 
       }      
     }
 
-    .logo-sfondo{  
+    .logo-sfondo{ 
+      position: relative;
+      left: 17%;     
       background-image: url('../assets/dc-logo-bg.png');
-      width: 50%; 
-      
+      width: 50%;      
       background-size: cover;
-      background-position: center;
-    }        
+      background-position: center;   
+      
+
+       
+    }
+
+           
   } 
 }
 
