@@ -1,13 +1,11 @@
 <template>
   <div id="app">    
     <Header/> 
-
     <main>
       <Jumbotron/>
-
+      <CurrentSeries/>
       <Products/>
-    </main>  
-    
+    </main>     
     <Footer/>
   </div>
 </template>
@@ -16,7 +14,6 @@
 import Header from "./components/Header.vue";
 import Jumbotron from "./components/Jumbotron.vue";
 import CurrentSeries from "./components/CurrentSeries.vue";
-
 import Products from "./components/Products.vue";
 import Footer from "./components/Footer.vue";
 
