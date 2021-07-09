@@ -5,9 +5,7 @@
                 <button><a href="">current series</a></button>
             </div>
             <div class="icon">  
-                <!-- <img :src="currentseriesitem.thumb" :alt="currentseriesitem.series">
-                <h5 class="">{{currentseriesitem.series}}</h5>        -->
-                
+                <ImgCard v-for="(card,i) in cards" :key="i" :cardData="card"/>                
             </div> 
             <div class="load-more">
                 <button><a href="">load more</a></button>
@@ -17,10 +15,19 @@
 </template>
 
 <script>
+import ImgCard from '@/components/CurrentIcon.vue';
+import currentseriesitem from '@/data/currentseriesitem.js';
+
 export default {
-  name: "CurrentSeries", 
-//   props: ["currentseriesitem"]
-       
+    name: "MainItem", 
+    components: {      
+        ImgCard
+    },    
+    data(){
+        return{        
+            cards : currentseriesitem  
+        }  
+    }  
 }
 </script>
 
@@ -54,14 +61,10 @@ export default {
         }
 
         .icon{
-            width: calc((100% - (10px * 6))/6);
-            margin: 40px 0;
-
-            img{
-                margin-bottom: 10px;
-            }
-        }
-    
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }    
 
         .load-more{
             display: flex;
@@ -75,6 +78,13 @@ export default {
                 background-color: #0282f9;
                 border: none;
                 margin-bottom: 15px;
+
+                &:hover,
+                &.active{
+                    cursor: pointer;
+                    transform: scale(1.02); 
+                    border: 1px solid rgb(159, 196, 255);
+              }
             }
             a{
                 color: white;
